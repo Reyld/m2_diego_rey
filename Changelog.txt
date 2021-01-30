@@ -1,0 +1,4 @@
+V 1.1:
+	- En el for de permisos, crear un system print indicando el permiso [j] que se está editando.	(DONE)
+	- Poder asignar un nombre a la aplicación que vas a crear.					(DONE)
+
