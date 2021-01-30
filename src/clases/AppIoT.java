@@ -2,6 +2,7 @@ package clases;
 
 public class AppIoT extends AppSoftware {
 
+	String nombre;
 	boolean graph; 	// ¿Tiene interfaz gráfica?
 	boolean wifi;	// ¿Tiene WiFi?
 	
@@ -28,7 +29,8 @@ public class AppIoT extends AppSoftware {
 
 
 
-	public AppIoT(boolean graf, boolean wifi, String lang, boolean persis, double compl, int lines, int tests) {
+	public AppIoT(String nombre, boolean graf, boolean wifi, String lang, boolean persis, double compl, int lines, int tests) {
+		this.nombre = nombre;
 		this.graph = graf;
 		this.wifi = wifi;
 		setProgrammlang(lang);
@@ -50,7 +52,7 @@ public class AppIoT extends AppSoftware {
 
 	@Override
 	public String toString() {
-		return "AppIoT [graph=" + this.graph + ", wifi=" + this.wifi + ", lenguaje de prgramación: " + getProgrammlang() + ", persistencia: " + isPersist() + ", complejidad: "
+		return "AppIoT [nombre de la app: " + this.nombre + "graph: " + this.graph + ", wifi: " + this.wifi + ", lenguaje de prgramación: " + getProgrammlang() + ", persistencia: " + isPersist() + ", complejidad: "
 				+ 	+ getComplex() + ", lineas de codigo: " + getCodelines() + ", testeos: " + getTestcases() + ", calidad: " + super.calcularCalidad(getComplex(), getCodelines(), getTestcases()) + "]";
 	}
 	

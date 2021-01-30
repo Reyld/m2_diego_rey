@@ -21,6 +21,8 @@ public class MainArray {
 			AppWeb[] webs = new AppWeb[2];
 			for (int i = 0; i < webs.length; i++) {
 				// Obtenemos los datos
+				System.out.println("Introduzca nombre de la aplicación");
+				String name = teclado.next();
 				System.out.println("Introducir lenguaje de backend");
 				String back = teclado.next();
 				System.out.println("Introducir lenguaje de frontend");
@@ -35,7 +37,7 @@ public class MainArray {
 				int tests = teclado.nextInt();
 				System.out.println("Se han procesado correctamente los datos de la aplicación");
 				// Almacenamos
-				webs[i] = new AppWeb(back, front, lang, compl, lines, tests);
+				webs[i] = new AppWeb(name, back, front, lang, compl, lines, tests);
 			}
 			// Imprimimos
 			for (int i = 0; i < webs.length; i++) {
@@ -51,6 +53,8 @@ public class MainArray {
 			for (int i = 0; i < mobiles.length; i++) {
 				// Obtenemos los datos
 				
+					System.out.println("Introduzca nombre de la aplicación");
+					String name = teclado.next();
 					System.out.println("¿Es hibrida?");
 					boolean hyb = teclado.nextBoolean();
 									
@@ -63,6 +67,7 @@ public class MainArray {
 					System.out.println("Introducir permisos necesarios");
 								teclado.nextLine();
 						for (int j = 0; j < p ; j++) {
+								 System.out.println("Asigne el permiso " + (j + 1));
 	
 								 newperm = teclado.nextLine();
 								 System.out.println(j);
@@ -83,7 +88,7 @@ public class MainArray {
 					int tests = teclado.nextInt();
 					System.out.println("Se han procesado correctamente los datos de la aplicación");
 					// Almacenamos
-					mobiles[i] = new AppMobile(hyb, permisos2, lang, persis, compl, lines, tests);
+					mobiles[i] = new AppMobile(name, hyb, permisos2, lang, persis, compl, lines, tests);
 				}
 			
 				// Imprimimos
@@ -95,6 +100,8 @@ public class MainArray {
 				AppIoT[] iots = new AppIoT[2];
 				for (int i = 0; i < iots.length; i++) {
 					// Obtenemos los datos
+					System.out.println("Introduzca nombre de la aplicación");
+					String name = teclado.next();
 					System.out.println("¿Tiene interfaz grafica?");
 					boolean graf = teclado.nextBoolean();
 					System.out.println("¿Requiere acceso a internet?");
@@ -111,7 +118,7 @@ public class MainArray {
 					int tests = teclado.nextInt();
 					System.out.println("Se han procesado correctamente los datos de la aplicación");
 					// Almacenamos
-					iots[i] = new AppIoT(graf, wifi, lang, persis, compl, lines, tests);
+					iots[i] = new AppIoT(name, graf, wifi, lang, persis, compl, lines, tests);
 				}
 			
 					// Imprimimos
@@ -119,7 +126,8 @@ public class MainArray {
 						System.out.println(iots[i]);
 						}
 					} else {
-				System.out.println("No se ha detectado la opcion deseada.");
+				System.out.println("No se ha detectado la opcion deseada. Este programa se cerrará.");
+				
 				
 				// En planificación: El programa se cierra si no se introduce ningún valor.
 				System.exit(0);

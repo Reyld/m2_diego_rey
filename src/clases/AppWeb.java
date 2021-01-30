@@ -1,6 +1,7 @@
 package clases;
 
 public class AppWeb extends AppSoftware {
+	private String nombre;
 	private String res;
 	private String backend = "el framework de backend es Y";
 	private String frontend = "el framework de frontend es Z";
@@ -22,7 +23,8 @@ public class AppWeb extends AppSoftware {
 
 	
 	
-	public AppWeb(String back, String front, String lang, double compl, int lines, int tests) {
+	public AppWeb(String nombre, String back, String front, String lang, double compl, int lines, int tests) {
+		this.nombre = nombre;
 		this.backend = back;
 		this.frontend = front;
 		setProgrammlang(lang);
@@ -35,7 +37,7 @@ public class AppWeb extends AppSoftware {
 
 	@Override
 	public String toString() {
-		return "AppWeb [backend=" + this.backend + ", frontend=" + this.frontend + ", lenguaje de prgramación: " + getProgrammlang() + ", complejidad: "
+		return "AppWeb [nombre: " + this.nombre + " backend: " + this.backend + ", frontend: " + this.frontend + ", lenguaje de prgramación: " + getProgrammlang() + ", complejidad: "
 				+ getComplex() + ", lineas de codigo: " + getCodelines() + ", testeos: " + getTestcases() + ", calidad: " + super.calcularCalidad(getComplex(), getCodelines(), getTestcases()) + "]";
 	}
 	

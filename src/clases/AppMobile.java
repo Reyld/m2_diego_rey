@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public  class AppMobile extends AppSoftware {
 	
+	private String nombre;
 	private String result;
 	private boolean hybrid;
 	private String permisos[] = {"Cámara", "Micrófono", "Geolocalización", "Acelerómetro", "Contactos"};
@@ -28,7 +29,8 @@ public  class AppMobile extends AppSoftware {
 
 	// Main Array Constructor
 
-	public AppMobile(boolean hyb, String[] permisos2, String lang, boolean persis, double compl, int lines, int tests) {
+	public AppMobile(String nombre, boolean hyb, String[] permisos2, String lang, boolean persis, double compl, int lines, int tests) {
+		this.nombre = nombre;
 		this.hybrid = hyb;
 		//permisos2 = Arrays.toString(permisos);
 		this.permisos = permisos2;
@@ -66,7 +68,7 @@ public  class AppMobile extends AppSoftware {
 	public String toString() {
 		
 	
-		return "AppMobile [hibrido=" + hybrid + ", permisos=" + Arrays.toString(permisos)
+		return "AppMobile [nombre de la app: " + this.nombre + "hibrido: " + hybrid + ", permisos: " + Arrays.toString(permisos)
 				+ ", lenguaje de prgramación: " + getProgrammlang() + ", persistencia: " + isPersist() + ", complejidad: "
 				+ getComplex() + ", lineas de codigo: " + getCodelines() + ", testeos: " + getTestcases() + ", calidad: " + super.calcularCalidad(getComplex(), getCodelines(), getTestcases()) + "]";
 				

@@ -31,6 +31,8 @@ public class MainArrayList {
 			for (int i = 0; i < webs.length; i++) {
 				
 				// Obtenemos los datos
+				System.out.println("Introduzca nombre de la aplicación");
+				String name = teclado.next();
 				System.out.println("Introducir lenguaje de backend");
 				String back = teclado.next();
 				System.out.println("Introducir lenguaje de frontend");
@@ -47,7 +49,7 @@ public class MainArrayList {
 				// Almacenamos
 				
 				//webs[i] = new AppWeb(back, front, lang, compl, lines, tests);
-				webapps.add(new AppWeb(back, front, lang, compl, lines, tests));
+				webapps.add(new AppWeb(name, back, front, lang, compl, lines, tests));
 
 			}
 			// Imprimimos
@@ -69,6 +71,8 @@ public class MainArrayList {
 			
 			for (int i = 0; i < mobiles.length; i++) {
 				// Obtenemos los datos
+					System.out.println("Introduzca nombre de la aplicación");
+					String name = teclado.next();
 				
 					System.out.println("¿Es hibrida?");
 					boolean hyb = teclado.nextBoolean();
@@ -103,7 +107,7 @@ public class MainArrayList {
 					System.out.println("Se han procesado correctamente los datos de la aplicación");
 					// Almacenamos
 					
-					mobileapps.add(new AppMobile(hyb, permisos2, lang, persis, compl, lines, tests));
+					mobileapps.add(new AppMobile(name, hyb, permisos2, lang, persis, compl, lines, tests));
 					//mobiles[i] = new AppMobile(hyb, permisos2, lang, persis, compl, lines, tests);
 				}
 			
@@ -118,6 +122,8 @@ public class MainArrayList {
 				AppIoT[] iots = new AppIoT[2];
 				for (int i = 0; i < iots.length; i++) {
 					// Obtenemos los datos
+					System.out.println("Introduzca nombre de la aplicación");
+					String name = teclado.next();
 					System.out.println("¿Tiene interfaz grafica?");
 					boolean graf = teclado.nextBoolean();
 					System.out.println("¿Requiere acceso a internet?");
@@ -134,7 +140,7 @@ public class MainArrayList {
 					int tests = teclado.nextInt();
 					System.out.println("Se han procesado correctamente los datos de la aplicación");
 					// Almacenamos
-					iotapps.add(new AppIoT(graf, wifi, lang, persis, compl, lines, tests));
+					iotapps.add(new AppIoT(name, graf, wifi, lang, persis, compl, lines, tests));
 					//iots[i] = new AppIoT(graf, wifi, lang, persis, compl, lines, tests);
 				}
 			
@@ -144,7 +150,7 @@ public class MainArrayList {
 						//System.out.println(iots[i]);
 						}
 					} else {
-				System.out.println("No se ha detectado la opcion deseada.");
+				System.out.println("No se ha detectado la opcion deseada. El programa se cerrará.");
 				
 				// En planificación: El programa se cierra si no se introduce ningún valor.
 				System.exit(0);
