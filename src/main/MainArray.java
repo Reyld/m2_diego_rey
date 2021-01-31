@@ -70,11 +70,11 @@ public class MainArray {
 								 System.out.println("Asigne el permiso " + (j + 1));
 	
 								 newperm = teclado.nextLine();
-								 System.out.println(j);
+								 //System.out.println(j);
 								 System.out.println(newperm);
 								 
 								 permisos2[j] = newperm;
-								 System.out.println(permisos2);
+								 //System.out.println(permisos2);
 						}
 					System.out.println("Introducir lenguaje de programacion");
 					String lang = teclado.next();

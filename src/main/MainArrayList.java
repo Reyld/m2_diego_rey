@@ -86,13 +86,13 @@ public class MainArrayList {
 					System.out.println("Introducir permisos necesarios");
 								teclado.nextLine();
 						for (int j = 0; j < p ; j++) {
-	
+								System.out.println("Asigne el permiso" + (j + 1));
 								 newperm = teclado.nextLine();
-								 System.out.println(j);
+								 
 								 System.out.println(newperm);
 								 
 								 permisos2[j] = newperm;
-								 System.out.println(permisos2);
+								 // System.out.println(permisos2);
 						}
 					System.out.println("Introducir lenguaje de programacion");
 					String lang = teclado.next();
@@ -145,10 +145,9 @@ public class MainArrayList {
 				}
 			
 					// Imprimimos
-					for (int i = 0; i < iots.length; i++) {
 						System.out.println(iotapps);
 						//System.out.println(iots[i]);
-						}
+						
 					} else {
 				System.out.println("No se ha detectado la opcion deseada. El programa se cerrará.");
 				
