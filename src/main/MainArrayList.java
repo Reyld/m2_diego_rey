@@ -29,14 +29,14 @@ public class MainArrayList {
 			ArrayList<AppWeb> webapps = new ArrayList<AppWeb>();
 			
 			System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-			int a = teclado.nextInt();													// Esta variable sirve para identificar el número de Apps que vamos a crear.
-			AppWeb[] webs = new AppWeb[a];
+			// int a = teclado.nextInt();													// Esta variable sirve para identificar el número de Apps que vamos a crear.
+			AppWeb[] webs = new AppWeb[2];
 			
 			
 			for (int i = 0; i < webs.length; i++) {
 				
 				// Obtenemos los datos
-				System.out.println("FORMULARIO DE CREACIÓN DE LA APLICACIÓN " + (i + 1));
+				System.out.println("FORMULARIO DE CREACIÓN DE LA APLICACIÓN WEB " + (i + 1));
 				
 				System.out.println("Introduzca nombre de la aplicación");
 				String name = teclado.next();
@@ -73,16 +73,16 @@ public class MainArrayList {
 		else if (opcion == 2) {
 			ArrayList<AppMobile> mobileapps = new ArrayList<AppMobile>();
 			System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-			int a = teclado.nextInt();
+			// int a = teclado.nextInt();
 			
-			AppMobile[] mobiles = new AppMobile[a];
+			AppMobile[] mobiles = new AppMobile[2];
 			// String[] permisos2 = {};
 			 String newperm = ("");
 			
 			for (int i = 0; i < mobiles.length; i++) {
 				
 				// Obtenemos los datos
-					System.out.println("FORMULARIO DE CREACIÓN DE LA APLICACIÓN " + (i + 1));
+					System.out.println("FORMULARIO DE CREACIÓN DE LA APLICACIÓN MOBIL " + (i + 1));
 				
 					System.out.println("Introduzca nombre de la aplicación");
 					String name = teclado.next();
@@ -134,13 +134,13 @@ public class MainArrayList {
 			else if (opcion == 3) {
 				ArrayList<AppIoT> iotapps = new ArrayList<AppIoT>();
 				System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-				int a = teclado.nextInt();
+				//int a = teclado.nextInt();
 				
-				AppIoT[] iots = new AppIoT[a];
+				AppIoT[] iots = new AppIoT[2];
 				for (int i = 0; i < iots.length; i++) {
 					
 					// Obtenemos los datos
-					System.out.println("FORMULARIO DE CREACIÓN DE LA APLICACIÓN " + (i + 1));
+					System.out.println("FORMULARIO DE CREACIÓN DE LA APLICACIÓN IoT " + (i + 1));
 					
 					System.out.println("Introduzca nombre de la aplicación");
 					String name = teclado.next();
@@ -187,9 +187,11 @@ public class MainArrayList {
 
 	}
 
+	/*
 	private static String webapps(int i) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	*/
 
 }
