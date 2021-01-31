@@ -1,4 +1,7 @@
 V 1.1:
-	- En el for de permisos, crear un system print indicando el permiso [j] que se está editando.	(DONE)
-	- Poder asignar un nombre a la aplicación que vas a crear.					(DONE)
+	- En el for de permisos, crear un system print indicando el permiso [j] que se está editando.
+	- Poder asignar un nombre a la aplicación que vas a crear.
 
+V 1.1b:
+	- Ahora el MainArrayList imprimirá el resultado una única vez.
+	- Actualizaciones menores en el apartado de asignación de permisos en la creación de una App Mobil.
