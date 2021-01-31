@@ -15,23 +15,29 @@ public class MainArray {
 		Scanner teclado = new Scanner(System.in);
 		
 		try {
-			System.out.println("Elija una opcion: 1 - Crear aplicacion web. 2 - Crear aplicacion mobil. 3 - Crear aplicacion IoT.");
+			System.out.println("Elija una opción: 1 - Crear aplicación web. 2 - Crear aplicación mobil. 3 - Crear aplicación IoT.");
 		int opcion = teclado.nextInt();
 		if (opcion == 1) {
-			AppWeb[] webs = new AppWeb[2];
+			System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
+			int a = teclado.nextInt();
+			
+			AppWeb[] webs = new AppWeb[a];
 			for (int i = 0; i < webs.length; i++) {
+				
 				// Obtenemos los datos
+				System.out.println("FORMULARIO DE CREACIÓN DE LA APLICACIÓN " + (i + 1));
+				
 				System.out.println("Introduzca nombre de la aplicación");
 				String name = teclado.next();
 				System.out.println("Introducir lenguaje de backend");
 				String back = teclado.next();
 				System.out.println("Introducir lenguaje de frontend");
 				String front = teclado.next();
-				System.out.println("Introducir lenguaje de programacion");
+				System.out.println("Introducir lenguaje de programación");
 				String lang = teclado.next();
 				System.out.println("Introducir complejidad");
 				double compl = teclado.nextDouble();
-				System.out.println("Introducir numero de lieneas");
+				System.out.println("Introducir numero de líeneas");
 				int lines = teclado.nextInt();
 				System.out.println("Indicar numero de testers");
 				int tests = teclado.nextInt();
@@ -41,21 +47,27 @@ public class MainArray {
 			}
 			// Imprimimos
 			for (int i = 0; i < webs.length; i++) {
+				System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
 				System.out.println(webs[i]);
 			}
 			
 		}
 		else if (opcion == 2) {
-			AppMobile[] mobiles = new AppMobile[2];
+			
+			System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
+			int a = teclado.nextInt();
+			
+			AppMobile[] mobiles = new AppMobile[a];
 			// String[] permisos2 = {};
 			 String newperm = ("");
 			
 			for (int i = 0; i < mobiles.length; i++) {
 				// Obtenemos los datos
+					System.out.println("FORMULARIO DE CREACIÓN DE LA APLICACIÓN " + (i + 1));
 				
 					System.out.println("Introduzca nombre de la aplicación");
 					String name = teclado.next();
-					System.out.println("¿Es hibrida?");
+					System.out.println("¿Es híbrida?");
 					boolean hyb = teclado.nextBoolean();
 									
 					// Te permite seleccionar el numero de permisos.
@@ -76,13 +88,13 @@ public class MainArray {
 								 permisos2[j] = newperm;
 								 //System.out.println(permisos2);
 						}
-					System.out.println("Introducir lenguaje de programacion");
+					System.out.println("Introducir lenguaje de programación");
 					String lang = teclado.next();
 					System.out.println("¿Tiene persistencia?");
 					boolean persis = teclado.nextBoolean();
 					System.out.println("Introducir complejidad");
 					double compl = teclado.nextDouble();
-					System.out.println("Introducir numero de lieneas");
+					System.out.println("Introducir numero de líeneas");
 					int lines = teclado.nextInt();
 					System.out.println("Indicar numero de testers");
 					int tests = teclado.nextInt();
@@ -93,26 +105,34 @@ public class MainArray {
 			
 				// Imprimimos
 				for (int i = 0; i < mobiles.length; i++) {
+					System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
 					System.out.println(mobiles[i]);
 				}
 			}
 			else if (opcion == 3) {
-				AppIoT[] iots = new AppIoT[2];
+				
+				System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
+				int a = teclado.nextInt();															// Esta variable sirve para identificar el número de Apps que vamos a crear.
+				
+				AppIoT[] iots = new AppIoT[a];
 				for (int i = 0; i < iots.length; i++) {
 					// Obtenemos los datos
+					
+					System.out.println("FORMULARIO DE CREACIÓN DE LA APLICACIÓN " + (i + 1));
+					
 					System.out.println("Introduzca nombre de la aplicación");
 					String name = teclado.next();
 					System.out.println("¿Tiene interfaz grafica?");
 					boolean graf = teclado.nextBoolean();
 					System.out.println("¿Requiere acceso a internet?");
 					boolean wifi = teclado.nextBoolean();
-					System.out.println("Introducir lenguaje de programacion");
+					System.out.println("Introducir lenguaje de programación");
 					String lang = teclado.next();
 					System.out.println("¿Tiene persistencia?");
 					boolean persis = teclado.nextBoolean();
 					System.out.println("Introducir complejidad");
 					double compl = teclado.nextDouble();
-					System.out.println("Introducir numero de lieneas");
+					System.out.println("Introducir numero de líeneas");
 					int lines = teclado.nextInt();
 					System.out.println("Indicar numero de testers");
 					int tests = teclado.nextInt();
@@ -123,6 +143,7 @@ public class MainArray {
 			
 					// Imprimimos
 					for (int i = 0; i < iots.length; i++) {
+						System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
 						System.out.println(iots[i]);
 						}
 					} else {

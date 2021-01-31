@@ -5,3 +5,6 @@ V 1.1:
 V 1.1b:
 	- Ahora el MainArrayList imprimirá el resultado una única vez.
 	- Actualizaciones menores en el apartado de asignación de permisos en la creación de una App Mobil.
+
+V 1.2:
+	- Ahora se permite seleccionar el número de Apps que vas a crear.

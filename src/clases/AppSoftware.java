@@ -109,7 +109,7 @@ public abstract class AppSoftware {
 				quality -= 20.00;
 			}
 			
-			System.out.println(quality);
+			// System.out.println(quality);
 			return quality;
 		}
 		
