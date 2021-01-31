@@ -29,8 +29,8 @@ public class MainArrayList {
 			ArrayList<AppWeb> webapps = new ArrayList<AppWeb>();
 			
 			System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-			// int a = teclado.nextInt();													// Esta variable sirve para identificar el número de Apps que vamos a crear.
-			AppWeb[] webs = new AppWeb[2];
+			 int a = teclado.nextInt();													// Esta variable sirve para identificar el número de Apps que vamos a crear.
+			AppWeb[] webs = new AppWeb[a];
 			
 			
 			for (int i = 0; i < webs.length; i++) {
@@ -73,9 +73,9 @@ public class MainArrayList {
 		else if (opcion == 2) {
 			ArrayList<AppMobile> mobileapps = new ArrayList<AppMobile>();
 			System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-			// int a = teclado.nextInt();
+			 int a = teclado.nextInt();
 			
-			AppMobile[] mobiles = new AppMobile[2];
+			AppMobile[] mobiles = new AppMobile[a];
 			// String[] permisos2 = {};
 			 String newperm = ("");
 			
@@ -134,9 +134,9 @@ public class MainArrayList {
 			else if (opcion == 3) {
 				ArrayList<AppIoT> iotapps = new ArrayList<AppIoT>();
 				System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-				//int a = teclado.nextInt();
+				int a = teclado.nextInt();
 				
-				AppIoT[] iots = new AppIoT[2];
+				AppIoT[] iots = new AppIoT[a];
 				for (int i = 0; i < iots.length; i++) {
 					
 					// Obtenemos los datos

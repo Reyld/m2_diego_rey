@@ -19,9 +19,9 @@ public class MainArray {
 		int opcion = teclado.nextInt();
 		if (opcion == 1) {
 			System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-			// int a = teclado.nextInt();
+			 int a = teclado.nextInt();
 			
-			AppWeb[] webs = new AppWeb[2];
+			AppWeb[] webs = new AppWeb[a];
 			for (int i = 0; i < webs.length; i++) {
 				
 				// Obtenemos los datos
@@ -55,9 +55,9 @@ public class MainArray {
 		else if (opcion == 2) {
 			
 			System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-			// int a = teclado.nextInt();
+			 int a = teclado.nextInt();
 			
-			AppMobile[] mobiles = new AppMobile[2];
+			AppMobile[] mobiles = new AppMobile[a];
 			// String[] permisos2 = {};
 			 String newperm = ("");
 			
@@ -112,9 +112,9 @@ public class MainArray {
 			else if (opcion == 3) {
 				
 				System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-				// int a = teclado.nextInt();															// Esta variable sirve para identificar el número de Apps que vamos a crear.
+				 int a = teclado.nextInt();															// Esta variable sirve para identificar el número de Apps que vamos a crear.
 				
-				AppIoT[] iots = new AppIoT[2];
+				AppIoT[] iots = new AppIoT[a];
 				for (int i = 0; i < iots.length; i++) {
 					// Obtenemos los datos
 					
