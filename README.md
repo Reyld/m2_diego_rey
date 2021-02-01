@@ -4,4 +4,6 @@ La idea de este proyecto consiste en la posibilidad de crear aplicaciones Web, J
 datos, sin que se almacenen.
 
 
-El usuario tiene la posibilidad de rellenar los productos que desea crear, asignandole un nombre y unos parámetros en función del tipo de aplicación deseada. Actualmente, el usuario puede elegir el número de aplicaciones a registrar/crear.
+El usuario tiene la posibilidad de rellenar los productos que desea crear, asignandole un nombre y unos parámetros en función del tipo de aplicación deseada. Actualmente, el usuario puede crear 2 Apps.
+
+P.D.: Hay dos versiones, la main y la beta. En la beta, se puede elegir el número de apps que se desean crear (puede presentar fallos)
