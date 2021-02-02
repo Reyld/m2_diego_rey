@@ -18,8 +18,8 @@ public class MainArray {
 			System.out.println("Elija una opción: 1 - Crear aplicación web. 2 - Crear aplicación mobil. 3 - Crear aplicación IoT.");
 		int opcion = teclado.nextInt();
 		if (opcion == 1) {
-			System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-			// int a = teclado.nextInt();
+			// System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
+			 // int a = teclado.nextInt();
 			
 			AppWeb[] webs = new AppWeb[2];
 			for (int i = 0; i < webs.length; i++) {
@@ -46,16 +46,18 @@ public class MainArray {
 				webs[i] = new AppWeb(name, back, front, lang, compl, lines, tests);
 			}
 			// Imprimimos
+			teclado.close();
+			System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
 			for (int i = 0; i < webs.length; i++) {
-				System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
+				
 				System.out.println(webs[i]);
 			}
 			
 		}
 		else if (opcion == 2) {
 			
-			System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-			// int a = teclado.nextInt();
+			// System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
+			 // int a = teclado.nextInt();
 			
 			AppMobile[] mobiles = new AppMobile[2];
 			// String[] permisos2 = {};
@@ -104,15 +106,17 @@ public class MainArray {
 				}
 			
 				// Imprimimos
+				teclado.close();
+				System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
 				for (int i = 0; i < mobiles.length; i++) {
-					System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
+					
 					System.out.println(mobiles[i]);
 				}
 			}
 			else if (opcion == 3) {
 				
-				System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
-				// int a = teclado.nextInt();															// Esta variable sirve para identificar el número de Apps que vamos a crear.
+				// System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
+				 // int a = teclado.nextInt();															// Esta variable sirve para identificar el número de Apps que vamos a crear.
 				
 				AppIoT[] iots = new AppIoT[2];
 				for (int i = 0; i < iots.length; i++) {
@@ -142,12 +146,16 @@ public class MainArray {
 				}
 			
 					// Imprimimos
+					teclado.close();
+					System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
 					for (int i = 0; i < iots.length; i++) {
-						System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
+						
 						System.out.println(iots[i]);
+						
 						}
 					} else {
 				System.out.println("No se ha detectado la opcion deseada. Este programa se cerrará.");
+				teclado.close();
 				
 				
 				// En planificación: El programa se cierra si no se introduce ningún valor.
@@ -156,6 +164,7 @@ public class MainArray {
 		}
 		catch (Exception e){
 			System.out.println("Se ha detectado un error. El programa se cerrará.");
+			teclado.close();
 			
 			// En planificación: El programa se cierra si no se introduce ningún valor.
 			System.exit(0);
