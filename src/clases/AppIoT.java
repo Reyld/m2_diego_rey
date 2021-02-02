@@ -52,8 +52,29 @@ public class AppIoT extends AppSoftware {
 
 	@Override
 	public String toString() {
-		return "AppIoT [nombre de la app: " + this.nombre + "graph: " + this.graph + ", wifi: " + this.wifi + ", lenguaje de prgramación: " + getProgrammlang() + ", persistencia: " + isPersist() + ", complejidad: "
+		return "AppIoT [nombre de la app: " + this.nombre + ", graph: " + this.graph + ", wifi: " + this.wifi + ", lenguaje de prgramación: " + getProgrammlang() + ", persistencia: " + isPersist() + ", complejidad: "
 				+ 	+ getComplex() + ", lineas de codigo: " + getCodelines() + ", testeos: " + getTestcases() + ", calidad: " + super.calcularCalidad(getComplex(), getCodelines(), getTestcases()) + "]";
+	}
+
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+		
+	}
+
+
+
+	public void setGraph(boolean graph) {
+		this.graph = graph;
+		
+	}
+
+
+
+	public void setWifi(boolean wifi) {
+		this.wifi = wifi;
+		
 	}
 	
 	

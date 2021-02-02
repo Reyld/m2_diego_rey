@@ -23,7 +23,7 @@ public  class AppMobile extends AppSoftware {
 	public AppMobile(String[] permisos) {
 		
 		this.setPermisos(permisos);
-		// TODO Auto-generated constructor stub
+
 	}
 	
 
@@ -68,7 +68,7 @@ public  class AppMobile extends AppSoftware {
 	public String toString() {
 		
 	
-		return "AppMobile [nombre de la app: " + this.nombre + "hibrido: " + hybrid + ", permisos: " + Arrays.toString(permisos)
+		return "AppMobile [nombre de la app: " + this.nombre + ", hibrido: " + hybrid + ", permisos: " + Arrays.toString(permisos)
 				+ ", lenguaje de prgramación: " + getProgrammlang() + ", persistencia: " + isPersist() + ", complejidad: "
 				+ getComplex() + ", lineas de codigo: " + getCodelines() + ", testeos: " + getTestcases() + ", calidad: " + super.calcularCalidad(getComplex(), getCodelines(), getTestcases()) + "]";
 				
@@ -84,6 +84,25 @@ public  class AppMobile extends AppSoftware {
 
 	public void setPermisos(String permisos[]) {
 		this.permisos = permisos;
+	}
+
+
+	public void setHybrid(boolean b) {
+		this.hybrid = b;
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setPermisos(String string, String string2, String string3, String string4, String string5) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+		
 	}
 	
 }

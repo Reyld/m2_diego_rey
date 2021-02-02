@@ -46,8 +46,10 @@ public class MainArray {
 				webs[i] = new AppWeb(name, back, front, lang, compl, lines, tests);
 			}
 			// Imprimimos
+			teclado.close();
+			System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
 			for (int i = 0; i < webs.length; i++) {
-				System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
+				
 				System.out.println(webs[i]);
 			}
 			
@@ -104,8 +106,10 @@ public class MainArray {
 				}
 			
 				// Imprimimos
+				teclado.close();
+				System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
 				for (int i = 0; i < mobiles.length; i++) {
-					System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
+					
 					System.out.println(mobiles[i]);
 				}
 			}
@@ -142,12 +146,16 @@ public class MainArray {
 				}
 			
 					// Imprimimos
+					teclado.close();
+					System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
 					for (int i = 0; i < iots.length; i++) {
-						System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
+						
 						System.out.println(iots[i]);
+						
 						}
 					} else {
 				System.out.println("No se ha detectado la opcion deseada. Este programa se cerrará.");
+				teclado.close();
 				
 				
 				// En planificación: El programa se cierra si no se introduce ningún valor.
@@ -156,6 +164,7 @@ public class MainArray {
 		}
 		catch (Exception e){
 			System.out.println("Se ha detectado un error. El programa se cerrará.");
+			teclado.close();
 			
 			// En planificación: El programa se cierra si no se introduce ningún valor.
 			System.exit(0);

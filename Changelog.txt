@@ -7,5 +7,9 @@ V 1.1b:
 	- Actualizaciones menores en el apartado de asignación de permisos en la creación de una App Mobil.
 
 V 1.2:
+	- Cambios menores.
+
+V 1.2b: 
+	- Cambios menores.
 	- Ahora se puede seleccionar el número de apps que se van a crear.
 

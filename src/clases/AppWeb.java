@@ -24,6 +24,8 @@ public class AppWeb extends AppSoftware {
 	
 	
 	public AppWeb(String nombre, String back, String front, String lang, double compl, int lines, int tests) {
+
+		
 		this.nombre = nombre;
 		this.backend = back;
 		this.frontend = front;
@@ -37,7 +39,7 @@ public class AppWeb extends AppSoftware {
 
 	@Override
 	public String toString() {
-		return "AppWeb [nombre: " + this.nombre + " backend: " + this.backend + ", frontend: " + this.frontend + ", lenguaje de prgramación: " + getProgrammlang() + ", complejidad: "
+		return "AppWeb [nombre: " + this.nombre + ", backend: " + this.backend + ", frontend: " + this.frontend + ", lenguaje de prgramación: " + getProgrammlang() + ", complejidad: "
 				+ getComplex() + ", lineas de codigo: " + getCodelines() + ", testeos: " + getTestcases() + ", calidad: " + super.calcularCalidad(getComplex(), getCodelines(), getTestcases()) + "]";
 	}
 	
@@ -56,6 +58,29 @@ public class AppWeb extends AppSoftware {
 		
 
 	}
+
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+		
+	}
+
+
+
+	public void setBackend(String backend) {
+		this.backend = backend;
+		
+	}
+
+
+
+	public void setFrontend(String frontend) {
+		this.frontend = frontend;
+	}
+	
+	
+	
 
 
 	

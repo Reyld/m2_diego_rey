@@ -60,13 +60,10 @@ public class MainArrayList {
 
 			}
 			// Imprimimos
-			
-			for (int i = 0; i < webs.length; i++) {
-				System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
-				System.out.println(webapps);
-				// System.out.println(webapps[i]);
-			}
-			
+			System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
+			System.out.println(webapps);
+			teclado.close();
+
 			
 			
 		}
@@ -125,13 +122,12 @@ public class MainArrayList {
 				}
 			
 				// Imprimimos
-				for (int i = 0; i < mobiles.length; i++) {
-					System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
-					System.out.println(mobileapps);
-					//System.out.println(mobiles[i]);
-				}
+				System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
+				System.out.println(mobileapps);
+				teclado.close();
+
 			}
-			else if (opcion == 3) {
+		else if (opcion == 3) {
 				ArrayList<AppIoT> iotapps = new ArrayList<AppIoT>();
 				System.out.println("Por favor, indique cuantas aplicaciones desea crear.");
 				int a = teclado.nextInt();
@@ -167,17 +163,21 @@ public class MainArrayList {
 					// Imprimimos
 						System.out.println("Las aplicaciones se han creado correctamente. Estos són los datos que han ingresado en la base de datos:");
 						System.out.println(iotapps);
-						//System.out.println(iots[i]);
+						teclado.close();
 						
-					} else {
+					} 	else {
 				System.out.println("No se ha detectado la opcion deseada. El programa se cerrará.");
+				teclado.close();
+				
 				
 				// En planificación: El programa se cierra si no se introduce ningún valor.
 				System.exit(0);
 			}
+			
 		}
 		catch (Exception e){
 			System.out.println("Se ha detectado un error. El programa se cerrará.");
+			teclado.close();
 			
 			// En planificación: El programa se cierra si no se introduce ningún valor.
 			System.exit(0);
@@ -186,12 +186,5 @@ public class MainArrayList {
 		
 
 	}
-
-	/*
-	private static String webapps(int i) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	*/
 
 }
